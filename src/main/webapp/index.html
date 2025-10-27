@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Web Application - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .part-label {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Java Web Application</h1>
+            <p>Complete Web Project with Login, Employee Management, and Attendance Portal</p>
+            <p style="font-size: 16px; opacity: 0.9;">Built with Servlets, JSP, JDBC, and MySQL</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <span class="part-label">Part A</span>
+                <div class="feature-icon">🔐</div>
+                <h3>User Login</h3>
+                <p>Secure user authentication using Servlet and HTML Forms with session management.</p>
+                <a href="login.html" class="btn">Go to Login</a>
+            </div>
+
+            <div class="feature-card">
+                <span class="part-label">Part B</span>
+                <div class="feature-icon">👥</div>
+                <h3>Employee Records</h3>
+                <p>View and filter employee data with JDBC and Servlet integration.</p>
+                <a href="employee.html" class="btn">View Employees</a>
+            </div>
+
+            <div class="feature-card">
+                <span class="part-label">Part C</span>
+                <div class="feature-icon">📋</div>
+                <h3>Attendance Portal</h3>
+                <p>Student attendance management system using JSP and Servlets.</p>
+                <a href="attendance.jsp" class="btn">Attendance Portal</a>
+            </div>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-top: 40px;">
+            <h2 style="text-align: center; margin-bottom: 20px;">Project Features</h2>
+            <ul style="max-width: 600px; margin: 0 auto; line-height: 2;">
+                <li>✓ User authentication with session management</li>
+                <li>✓ Database connectivity using JDBC</li>
+                <li>✓ Employee data display and filtering</li>
+                <li>✓ Student attendance tracking</li>
+                <li>✓ Responsive and modern UI design</li>
+                <li>✓ DAO pattern for data access</li>
+                <li>✓ MVC architecture</li>
+            </ul>
+        </div>
+
+        <footer style="text-align: center; margin-top: 50px; padding: 20px; color: #666;">
+            <p>&copy; 2025 Java Web Application. Built with Java EE Technologies.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
