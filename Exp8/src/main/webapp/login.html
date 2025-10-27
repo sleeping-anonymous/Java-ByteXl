@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Part A</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .login-container {
+            max-width: 450px;
+            margin: 80px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .login-header p {
+            color: #666;
+            font-size: 14px;
+        }
+        .part-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .demo-credentials {
+            background: #f0f7ff;
+            border: 1px solid #bee3f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .demo-credentials h4 {
+            color: #2c5282;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .demo-credentials p {
+            margin: 5px 0;
+            font-size: 13px;
+            color: #2d3748;
+        }
+        .demo-credentials code {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <span class="part-badge">Part A</span>
+            <h1>User Login</h1>
+            <p>User Login Using Servlet and HTML Form</p>
+        </div>
+
+        <div class="demo-credentials">
+            <h4>Demo Credentials:</h4>
+            <p><strong>Username:</strong> <code>admin</code></p>
+            <p><strong>Password:</strong> <code>admin123</code></p>
+            <p style="font-size: 12px; margin-top: 10px; color: #718096;">
+                (Make sure to run the SQL setup script first)
+            </p>
+        </div>
+
+        <form action="login" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" 
+                       placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-block">Login</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="color: #667eea; text-decoration: none;">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Check for logout message
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('message') === 'logout') {
+            alert('You have been logged out successfully!');
+        }
+    </script>
+</body>
+</html>
+
