@@ -1,9 +1,0 @@
-[33m69d6e61[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m refs/remotes/origin/main@{0}: update by push
-[33m69d6e61[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m refs/heads/main@{0}: reset: moving to 69d6e61
-[33m69d6e61[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to 69d6e61
-[33m089f7bb[m refs/remotes/origin/main@{1}: update by push
-[33m089f7bb[m refs/heads/main@{1}: commit: Add Experiment 8 project in Exp8 folder
-[33m089f7bb[m HEAD@{1}: commit: Add Experiment 8 project in Exp8 folder
-[33m6b4d563[m refs/heads/main@{2}: clone: from https://github.com/sleeping-anonymous/Java-ByteXl.git
-[33m6b4d563[m refs/remotes/origin/HEAD@{0}: clone: from https://github.com/sleeping-anonymous/Java-ByteXl.git
-[33m6b4d563[m HEAD@{2}: clone: from https://github.com/sleeping-anonymous/Java-ByteXl.git
